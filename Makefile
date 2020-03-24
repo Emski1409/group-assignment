@@ -2,7 +2,7 @@
 all: clean install db
 
 .PHONY: db
-database:
+db:
 	node initialise_database.js
 
 .PHONY: install
