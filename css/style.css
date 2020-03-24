@@ -1,0 +1,182 @@
+/*import font Quattrocento*/
+@font-face {
+    font-family: Quattrocento;
+    src: url("../font/Quattrocento-Regular.ttf");
+}
+
+/*import font QuattrocentoSans*/
+@font-face {
+    font-family: QuattrocentoSans;
+    src: url("../font/QuattrocentoSans-Regular.ttf");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: QuattrocentoSans;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    background: beige;
+}
+
+
+.header {
+    font-family: Quattrocento;
+    height: 100px;
+    line-height: 60px;
+    background: #f17c67;
+}
+
+
+.body {
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.logo {
+    width: 40%;
+    float: left;
+    margin-left: 50px;
+}
+
+.menu {
+    width: 40%;
+    float: left;
+    margin-left: 20px;
+}
+
+.menu a {
+    color: #333333;
+    text-decoration: none;
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.menu a:hover{
+    color:green;
+}
+
+.slogan {
+    text-align: center;
+}
+
+#sloganImg {
+    width: 100%;
+    height: 800px;
+
+}
+
+.center {
+    text-align: center;
+}
+
+.element {
+    margin: 0 50px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#input {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+input[type="text"] {
+    border: 2px solid #ccc;
+    border-radius: 0.5px;
+    margin-top: 20px;
+}
+
+
+input[type='button']{
+    border-radius: 3px;
+    width: 100px;
+}
+
+.footer {
+    clear: both;
+    height: 100px;
+    line-height: 60px;
+    font-family: Quattrocento;
+    background: #f17c67;
+}
+
+td {
+    display: block;
+}
+
+#box:after,
+#box:before {
+    display: table;
+    content: "";
+}
+
+#box:after {
+    clear: both;
+}
+
+#box {
+    clear: both;
+}
+
+/* stats stuff ---------------------------------------*/
+#filterMenu {
+  font-size: 200%;
+  width: 30%;
+}
+
+.option {
+  display: block;
+  font-size: 100%;
+  padding: 10% 0 10% 0%;
+  width: 100%;
+}
+
+#filterOptions {
+  display: none;
+  position: absolute;
+  width: 30%;
+}
+
+
+
+/* question page stuff ------------------------------------- */
+
+
+#quitButton {
+  width: 15vw;
+  font-size: 4vw;
+  float: left;
+  position: fixed;
+  bottom: 5%;
+  left: 5%;
+}
+
+/* welcome screen ---------------------------*/
+
+#welcome {
+  margin-top: 4vw;
+  text-align: center;
+  font-size: 7vw;
+}
+
+#startButton {
+  font-size: 6vw;
+  width: 50%;
+  margin-left: 25%;
+  bottom: 6vw;
+  position: fixed;
+}
+
+
+/* quit button ====================================================== */
+
+#quitButton {
+  clear: both;
+}
