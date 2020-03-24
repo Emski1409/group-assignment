@@ -13,7 +13,8 @@ function addData() {
         optionSelection3:"Emma",
         rightTimes: 2,
         wrongTimes: 0,
-        giveUpTimes: 0
+        giveUpTimes: 0,
+        type: 1
     });
 
     let question2 = db.Question.create({
@@ -24,7 +25,8 @@ function addData() {
         optionSelection3:"Pokeman",
         rightTimes: 2,
         wrongTimes: 0,
-        giveUpTimes: 0
+        giveUpTimes: 0,
+        type: 1
     });
 
     let question3 = db.Question.create({
@@ -35,7 +37,8 @@ function addData() {
         optionSelection3:16,
         rightTimes: 1,
         wrongTimes: 1,
-        giveUpTimes: 0
+        giveUpTimes: 0,
+        type: 1
     });
 
     let question4 = db.Question.create({
@@ -46,7 +49,8 @@ function addData() {
         optionSelection3:"Australia",
         rightTimes: 1,
         wrongTimes: 0,
-        giveUpTimes: 0
+        giveUpTimes: 0,
+        type: 1
     });
 
     let question5 = db.Question.create({
@@ -57,7 +61,8 @@ function addData() {
         optionSelection3:"unknown",
         rightTimes: 0,
         wrongTimes: 2,
-        giveUpTimes: 0
+        giveUpTimes: 0,
+        type: 1
     });
 
     let question6 = db.Question.create({
@@ -68,7 +73,8 @@ function addData() {
         optionSelection3:"Football",
         rightTimes: 0,
         wrongTimes: 0,
-        giveUpTimes: 0
+        giveUpTimes: 0,
+        type: 1
     });
 
     let question7 = db.Question.create({
@@ -80,7 +86,7 @@ function addData() {
         rightTimes: 0,
         wrongTimes: 0,
         giveUpTimes: 0,
-
+        type: 1
     });
 
     let question8 = db.Question.create({
@@ -91,7 +97,8 @@ function addData() {
         optionSelection3:"Machine Learning",
         rightTimes: 0,
         wrongTimes: 0,
-        giveUpTimes: 0
+        giveUpTimes: 0,
+        type: 1
     });
 
     let question9 = db.Question.create({
@@ -102,7 +109,8 @@ function addData() {
         optionSelection3:"Denmark",
         rightTimes: 0,
         wrongTimes: 0,
-        giveUpTimes: 0
+        giveUpTimes: 0,
+        type: 1
     });
 
     let question10 = db.Question.create({
@@ -113,7 +121,17 @@ function addData() {
         optionSelection3:1999,
         rightTimes: 0,
         wrongTimes: 0,
-        giveUpTimes: 0
+        giveUpTimes: 0,
+        type: 1
+    });
+
+    let question11 = db.Question.create({
+        content: "The cat sat on the ___",
+        answer: "mat",
+        rightTimes: 0,
+        wrongTimes: 0,
+        giveUpTimes: 0,
+        type: 2
     });
 
     let tester1 = db.Tester.create({
@@ -134,22 +152,24 @@ function addData() {
     });
 
     // wait for all the objects to save and then instantiate relationships.
-    Promise.all([question1, question2, question3, question4, question5, question6, question7, question8, question9, question10, tester1, tester2, staff1]).then(function (
-        results
-    ) {
-        q1 = results[0];
-        q2 = results[1];
-        q3 = results[2];
-        q4 = results[3];
-        q5 = results[4];
-        q6 = results[5];
-        q7 = results[6];
-        q8 = results[7];
-        q9 = results[8];
-        q10 = results[9];
-        t1 = results[10];
-        t2 = results[11];
-        s1 = results[12];
+    Promise
+        .all([question1, question2, question3, question4,
+            question5, question6, question7, question8, question9,
+            question10, question11, tester1, tester2, staff1])
+        .then(function (results) {
+            q1 = results[0];
+            q2 = results[1];
+            q3 = results[2];
+            q4 = results[3];
+            q5 = results[4];
+            q6 = results[5];
+            q7 = results[6];
+            q8 = results[7];
+            q9 = results[8];
+            q10 = results[9];
+            t1 = results[10];
+            t2 = results[11];
+            s1 = results[12];
     });
 };
 

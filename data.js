@@ -30,7 +30,8 @@ const Question = sequelize.define("Question", {
     optionSelection3:Sequelize.STRING,
     rightTimes:Sequelize.STRING,
     wrongTimes:Sequelize.STRING,
-    giveUpTimes:Sequelize.STRING
+    giveUpTimes:Sequelize.STRING,
+    type: Sequelize.INTEGER
 });
 
 // Tester has a name and his score for the questionnaire
