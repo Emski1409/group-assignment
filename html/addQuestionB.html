@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="../css/style.css" media="(min-width:760px)">
+    <link rel="stylesheet" href="../css/style_mobile.css" media="(max-width:760px)">
+</head>
+
+<body>
+
+<div class="footer">
+    <div class="body">
+        <div class="menu">
+            <!--Links to the different page      -->
+            <a href="index.html">Home</a>
+        </div>
+        <div class="logo" style="margin-left: 150px">Questionnaire time</div>
+    </div>
+</div>
+
+
+<div>
+  <p class='placeholder'>String 1</p>
+  <textarea rows= '4' id='addString1' class='input' placeholder='Type Beggining Of Paragraph Here'></textarea>
+</div>
+<div>
+  <p class='placeholder'>First Missing Word(s)</p>
+  <textarea class='input' id='addOption1A' placeholder='Type First Blank Here'></textarea>
+</div>
+<div>
+  <p class='placeholder'>String 2</p>
+  <textarea rows='4' name='answer' id='addString2' class='input' placeholder='....'></textarea>
+</div>
+<div>
+  <p class='placeholder'>Second Missing Word(s)</p>
+  <textarea name='answer' id='addOption2A' class='input' placeholder='Type Second Blank Here'></textarea>
+</div>
+<div>
+  <p class='placeholder'>String 3</p>
+  <textarea rows='4' name='answer' id='addString3' class='input' placeholder='........'></textarea>
+</div>
+<div>
+  <p class='placeholder'>Third Missing Word(s)</p>
+  <textarea name='answer' id='addOption3A' class='input' placeholder='Type Third Blank Here'></textarea>
+</div>
+<div>
+  <p class='placeholder'>String 4</p>
+  <textarea rows='4' name='answer' id='addString4' class='input' placeholder='........'></textarea>
+</div>
+<div>
+  <p class='placeholder'>Fourth Missing Word(s)</p>
+  <textarea name='answer' id='addOption4A' class='input' placeholder='Type Fourth Blank Here'></textarea>
+</div>
+<div>
+  <p class='placeholder'>String 5</p>
+  <textarea rows='4' name='answer' id='addString5' class='input' placeholder='........'></textarea>
+</div>
+
+<button id='cancelButtonA' style='font-size:3vw'>Cancel</button>
+<button id='addButtonB' onclick='addSubmitB()' style='font-size:3vw'>Add</button>
+
+
+
+
+
+<script type="text/javascript" src="../js/questions.js"></script>
+</body>
+</html>
