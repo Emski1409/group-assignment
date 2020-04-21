@@ -20,12 +20,6 @@ router.get("/:questionID", function (req, res) {
     });
 });
 
-router.get("/type/:type", function (req, res) {
-    db.Question.findAll({ where: { type: req.params.type } }).then(function (questions) {
-        ret.json(questions, res);
-    });
-});
-
 router.post("/", function (req, res) {
     db.Question.create({
         content: req.body.content,

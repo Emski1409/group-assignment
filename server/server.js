@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const db = require("./data");
 
-let testersRouter=require("./routes/testers");
+let question1Router=require("./routes/question1");
 let questionsRouter=require("./routes/questions");
 let staffsRouter=require("./routes/staffs")
 let searchRouter = require("./routes/search");
@@ -22,7 +22,7 @@ server.use(cors());
 // allow CORS preflight for all routes
 server.options("*", cors());
 
-server.use("/testers", testersRouter);
+server.use("/question1", question1Router);
 server.use("/questions", questionsRouter);
 server.use("/staffs",staffsRouter)
 server.use("/search", searchRouter);

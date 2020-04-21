@@ -31,14 +31,23 @@ const Question = sequelize.define("Question", {
     rightTimes:Sequelize.STRING,
     wrongTimes:Sequelize.STRING,
     giveUpTimes:Sequelize.STRING,
-    type: Sequelize.INTEGER
 });
 
 // Tester has a name and his score for the questionnaire
-const Tester = sequelize.define("Tester", {
-    name: Sequelize.STRING,
-    score: Sequelize.STRING,
-    expression: Sequelize.STRING
+const Question1 = sequelize.define("Question1", {
+    content: Sequelize.STRING,
+    string1: Sequelize.STRING,
+    option1: Sequelize.STRING,
+    string2: Sequelize.STRING,
+    option2: Sequelize.STRING,
+    string3: Sequelize.STRING,
+    option3: Sequelize.STRING,
+    string4: Sequelize.STRING,
+    option4: Sequelize.STRING,
+    string5: Sequelize.STRING,
+    wrongTimes: Sequelize.STRING,
+    rightTimes: Sequelize.STRING,
+    giveUpTimes: Sequelize.STRING
 });
 
 const Staff = sequelize.define("Staff", {
@@ -65,6 +74,6 @@ const initialiseDatabase = function (wipeAndClear, repopulate) {
 module.exports = {
     initialiseDatabase,
     Question,
-    Tester,
+    Question1,
     Staff
 };

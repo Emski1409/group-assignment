@@ -13,8 +13,7 @@ function addData() {
         optionSelection3:"Emma",
         rightTimes: 2,
         wrongTimes: 0,
-        giveUpTimes: 0,
-        type: 1
+        giveUpTimes: 0
     });
 
     let question2 = db.Question.create({
@@ -25,8 +24,7 @@ function addData() {
         optionSelection3:"Pokeman",
         rightTimes: 2,
         wrongTimes: 0,
-        giveUpTimes: 0,
-        type: 1
+        giveUpTimes: 0
     });
 
     let question3 = db.Question.create({
@@ -37,8 +35,7 @@ function addData() {
         optionSelection3:16,
         rightTimes: 1,
         wrongTimes: 1,
-        giveUpTimes: 0,
-        type: 1
+        giveUpTimes: 0
     });
 
     let question4 = db.Question.create({
@@ -49,8 +46,7 @@ function addData() {
         optionSelection3:"Australia",
         rightTimes: 1,
         wrongTimes: 0,
-        giveUpTimes: 0,
-        type: 1
+        giveUpTimes: 0
     });
 
     let question5 = db.Question.create({
@@ -61,8 +57,7 @@ function addData() {
         optionSelection3:"unknown",
         rightTimes: 0,
         wrongTimes: 2,
-        giveUpTimes: 0,
-        type: 1
+        giveUpTimes: 0
     });
 
     let question6 = db.Question.create({
@@ -71,10 +66,9 @@ function addData() {
         optionSelection1:"Basketball",
         optionSelection2:"Kettle bell",
         optionSelection3:"Football",
-        rightTimes: 0,
-        wrongTimes: 0,
-        giveUpTimes: 0,
-        type: 1
+        rightTimes: 2,
+        wrongTimes: 2,
+        giveUpTimes: 2
     });
 
     let question7 = db.Question.create({
@@ -84,9 +78,8 @@ function addData() {
         optionSelection2:"Phd",
         optionSelection3:"Secondary",
         rightTimes: 0,
-        wrongTimes: 0,
-        giveUpTimes: 0,
-        type: 1
+        wrongTimes: 3,
+        giveUpTimes: 4
     });
 
     let question8 = db.Question.create({
@@ -95,10 +88,9 @@ function addData() {
         optionSelection1:"Data analysis",
         optionSelection2:"Computer science",
         optionSelection3:"Machine Learning",
-        rightTimes: 0,
-        wrongTimes: 0,
-        giveUpTimes: 0,
-        type: 1
+        rightTimes: 2,
+        wrongTimes: 3,
+        giveUpTimes: 4
     });
 
     let question9 = db.Question.create({
@@ -107,10 +99,9 @@ function addData() {
         optionSelection1:"The United Kingdom",
         optionSelection2:"Iceland",
         optionSelection3:"Denmark",
-        rightTimes: 0,
-        wrongTimes: 0,
-        giveUpTimes: 0,
-        type: 1
+        rightTimes: 8,
+        wrongTimes: 1,
+        giveUpTimes: 0
     });
 
     let question10 = db.Question.create({
@@ -119,32 +110,92 @@ function addData() {
         optionSelection1:1997,
         optionSelection2:1998,
         optionSelection3:1999,
-        rightTimes: 0,
-        wrongTimes: 0,
-        giveUpTimes: 0,
-        type: 1
+        rightTimes: 5,
+        wrongTimes: 2,
+        giveUpTimes: 0
     });
 
-    let question11 = db.Question.create({
-        content: "The cat sat on the ___",
-        answer: "mat",
-        rightTimes: 0,
-        wrongTimes: 0,
-        giveUpTimes: 0,
-        type: 2
+    let question11 = db.Question1.create({
+      content: "basic addition",
+      string1: "2+2 is",
+      option1: 4,
+      string2: ".  3+3 is",
+      option2: 6,
+      string3: ".  4+4 is",
+      option3: 8,
+      string4: ".  5+5 is",
+      option4: 10,
+      string5: ".",
+      rightTimes: 3,
+      wrongTimes: 2,
+      giveUpTimes: 4
     });
 
-    let tester1 = db.Tester.create({
-        name: "Stephen Curry",
-        score: 6,
-        expression: "pass"
+    let question12 = db.Question1.create({
+      content: "some multiplication",
+      string1: "2-2 is",
+      option1: 0,
+      string2: ".  3x3 is",
+      option2: 9,
+      string3: ".  4x4 is",
+      option3: 16,
+      string4: ".  5x5 is",
+      option4: 25,
+      string5: ".",
+      rightTimes: 6,
+      wrongTimes: 2,
+      giveUpTimes: 0
     });
 
-    let tester2 = db.Tester.create({
-        name: "Lebron James",
-        score: 8,
-        expression: "merit"
+    let question13 = db.Question1.create({
+      content: "this time with spelling",
+      string1: "2+two is",
+      option1: 'four',
+      string2: ".  3+three is",
+      option2: 'six',
+      string3: ".  4+four is",
+      option3: 'eight',
+      string4: ".  5+five is",
+      option4: 'ten',
+      string5: ".",
+      rightTimes: 3,
+      wrongTimes: 2,
+      giveUpTimes: 4
     });
+
+    let question14 = db.Question1.create({
+      content: "language questions",
+      string1: "hello is a",
+      option1: 'greeting',
+      string2: ".  beautiful is an",
+      option2: 'adjective',
+      string3: ".  walking is a",
+      option3: 'verb',
+      string4: ".  dog is an",
+      option4: 'animal',
+      string5: ".",
+      rightTimes: 3,
+      wrongTimes: 2,
+      giveUpTimes: 4
+    });
+
+    let question15 = db.Question1.create({
+      content: "opinion questions",
+      string1: "chocolate is",
+      option1: 'nice',
+      string2: ".  bovril is",
+      option2: 'not nice',
+      string3: ".  football is",
+      option3: 'fun',
+      string4: ".  cricket is",
+      option4: 'boring',
+      string5: ".",
+      rightTimes: 3,
+      wrongTimes: 2,
+      giveUpTimes: 4
+    });
+
+
 
     let staff1 = db.Staff.create({
         username: "staff1",
@@ -155,7 +206,7 @@ function addData() {
     Promise
         .all([question1, question2, question3, question4,
             question5, question6, question7, question8, question9,
-            question10, question11, tester1, tester2, staff1])
+            question10, question11, staff1])
         .then(function (results) {
             q1 = results[0];
             q2 = results[1];
@@ -167,8 +218,6 @@ function addData() {
             q8 = results[7];
             q9 = results[8];
             q10 = results[9];
-            t1 = results[10];
-            t2 = results[11];
             s1 = results[12];
     });
 };
